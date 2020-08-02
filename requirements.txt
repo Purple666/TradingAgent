@@ -1,0 +1,1 @@
+tensortrade[tensorforce,baselines,ccxt,fbm]
