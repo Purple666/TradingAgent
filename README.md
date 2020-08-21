@@ -32,3 +32,5 @@ Build a enegry-based model to evalute the state of the market
 So it's more concise definition would be a mathematical model that we will define later.
 - Currency type: BTC
 - Dataframe: 1h
+### 4. Logs
+21-8-2020: Actually start this project, wrote some model design ideas.
