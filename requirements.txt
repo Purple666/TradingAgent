@@ -1,1 +1,2 @@
 tensortrade[tensorforce,baselines,ccxt,fbm]
+pandas~=0.25.0
