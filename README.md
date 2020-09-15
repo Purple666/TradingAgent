@@ -51,3 +51,4 @@ So it's more concise definition would be a mathematical model that we will defin
 
 ## 4. Logs
 21-8-2020: Actually start this project, wrote some model design ideas.
+14-9-2020: Start first baseline model, we will use Hopfield network as a pattern storage and query for future price sequence
