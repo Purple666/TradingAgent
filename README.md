@@ -18,10 +18,13 @@ But we will make some changes to this structure:
 
 ### Input format
 
-- Input format: sequence of prices data(normalized or standardized). 
+- Input format 1: sequence of prices data(normalized or standardized). Shape (N, 4) 
+- Input format 2: sequence of open prices, close prices... Shape (4, N)
+- I dont think the order of two input schemes above is really important here, but we must use experiments to verify that idea
 - Time frame: 24h
 - Side inputs: Basically the same input but in lower time frame (15 mins)
 - Output: sequence of prices data in the next 8 hours (timeframe 1h)
+- 
 
 ### How to process input
 
@@ -52,3 +55,5 @@ So it's more concise definition would be a mathematical model that we will defin
 ## 4. Logs
 21-8-2020: Actually start this project, wrote some model design ideas.
 14-9-2020: Start first baseline model, we will use Hopfield network as a pattern storage and query for future price sequence
+15-9-2020: Improve model spec, start perform EDA first because its more important than testing Hopfield Network, 
+Hopfield network is just a tool and we dont know for sure that we would rely on it after EDA

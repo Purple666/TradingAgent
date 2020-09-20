@@ -1,2 +1,3 @@
 tensortrade[tensorforce,baselines,ccxt,fbm]
-pandas~=0.25.0
+pandas==0.25.0
+stumpy==1.5.0
