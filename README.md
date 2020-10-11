@@ -53,7 +53,16 @@ So it's more concise definition would be a mathematical model that we will defin
 - Dataframe: 1h
 
 ## 4. Logs
+
 21-8-2020: Actually start this project, wrote some model design ideas.
 14-9-2020: Start first baseline model, we will use Hopfield network as a pattern storage and query for future price sequence
 15-9-2020: Improve model spec, start perform EDA first because its more important than testing Hopfield Network, 
 Hopfield network is just a tool and we dont know for sure that we would rely on it after EDA
+
+## 5. Install
+
+- Environment: Python3.6+
+- OS: Ubuntu 14+, Windows
+- Run ```pip3 install -r requirements.txt```
+- Download data from here: https://drive.google.com/drive/u/1/folders/1TcFK_nMnyr4weSWpA4OymY5Tme45k0Ig
+- Extract and copy it to folder __data/eur_usd__
