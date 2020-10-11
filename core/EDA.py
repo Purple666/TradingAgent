@@ -20,7 +20,11 @@ def plot_neighbour(data, idx, neighbour_idx, rect_w):
         axs[i].set_ylabel(f'{i}', fontsize='20')
 
 
-def matrix_profile(data, m, k):
+def matrix_profile(data: np.ndarray, m: int, k: int):
+    """
+    m: subsequence length
+    k: num subsequence
+    """
     out = stumpy.stump(data, m)
     dists = out[:, 0]
     # sort dists in ascending order and get indices of n smallest items
@@ -47,6 +51,6 @@ def main(data):
 
 
 if __name__ == '__main__':
-    csv_data = pd.read_csv(Constant.EUR_USD_H1, usecols=["Open", "Close", "High", "Low", ])
+    csv_data = pd.read_csv(Constant.EUR_USD_H1, usecols=["Open", "Close", "High", "Low"])
     # main(csv_data)
     matrix_profile(csv_data['Open'][0:1000].to_numpy(), m=24, k=10)
